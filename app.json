@@ -1,0 +1,30 @@
+{
+    "name": "OpenSea Discord Bot Updates",
+    "description": "A JS script to check with the OpenSea API sales from MITO Gallery Collection and send messages to Discord",
+    "keywords": [
+        "ethereum",
+        "nft",
+        "discord"
+    ],
+    "repository": "https://github.com/jasarmas/opensea-discord-bot",
+    "env": {
+        "CONTRACT_ADDRESS": {
+            "description": "The address of your token contract"
+        },
+        "COLLECTION_SLUG": {
+            "description": "The OpenSea slug for your collection"
+        },
+        "DISCORD_BOT_TOKEN": {
+            "description": "The auth token for a Discord bot",
+            "required": true
+        },
+        "DISCORD_CHANNEL_ID": {
+            "description": "Your Discord channel ID, where your Bot has access and will post",
+            "required": false
+        },
+        "SECONDS": {
+            "description": "How many seconds should we look back for sales on OpenSea.",
+            "required": false
+        }
+    }
+}
